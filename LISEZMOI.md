@@ -58,4 +58,4 @@ pip install --force-reinstall --no-cache-dir \
 
 ## Auteur
 
-[Warith HARCHAOUI](https://linkedin.com/in/warith-harchaoui)
+[Warith HARCHAOUI](https://www.linkedin.com/in/warith-harchaoui/)

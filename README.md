@@ -1,5 +1,8 @@
 # Colors Helper — archived
 
+[🇫🇷](LISEZMOI.md) · [🇬🇧](README.md)
+
+
 > **This repository is archived as of 2026-06-28.** Use one of these instead:
 >
 > - **Palette data (live, browse-able):** <https://harchaoui.org/warith/colors/>
@@ -53,4 +56,4 @@ pip install --force-reinstall --no-cache-dir \
 
 ## Author
 
-[Warith HARCHAOUI](https://linkedin.com/in/warith-harchaoui)
+[Warith HARCHAOUI](https://www.linkedin.com/in/warith-harchaoui/)
