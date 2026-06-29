@@ -1,8 +1,8 @@
 [tool.poetry]
 name = "colors-helper"
 version = "1.0.0"
-description = "Colors Helper is a Python library that provides utility functions for color manipulation, conversion, and palette management. It includes features like converting colors between formats, estimating wavelengths, generating light counterparts, and managing a centralized color palette."
-authors = ["Warith Harchaoui <warith@heedgi.com>, Laurent Pantanacce <laurent@heedgi.com>"]
+description = "Colors Helper is a Python library that provides utility functions for color manipulation, conversion, and palette management. It includes features like converting colors between formats, generating light counterparts, and managing a centralized color palette."
+authors = ["Warith Harchaoui <warith@deraison.ai>, Laurent Pantanacce <laurent@deraison.ai>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]

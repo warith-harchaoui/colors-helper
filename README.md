@@ -1,54 +1,56 @@
-# Colors Helper
+# Colors Helper — archived
 
-`Colors Helper` is part of the `AI Helpers` collection developed for working with colors in AI and digital applications.
+> **This repository is archived as of 2026-06-28.** Use one of these instead:
+>
+> - **Palette data (live, browse-able):** <https://harchaoui.org/warith/colors/>
+>   — base, emotions, concepts, and color psychology, all keyed off the same
+>   curated Apple-inspired hex set.
+>
+> - **Code (modern, maintained):** <https://github.com/warith-harchaoui/front>
+>   — specifically the `front-colors` skill, which now hosts:
+>   - WCAG contrast audit with OKLCH-neighbour fix suggestions
+>     (`front-colors/scripts/audit_contrast.py`)
+>   - Color-vision-deficiency simulation — protanopia / deuteranopia /
+>     tritanopia, Machado et al. 2009 matrices
+>     (`front-colors/scripts/simulate_cvd.py`)
+>   - Shared primitives — sRGB ↔ linear, hex ↔ RGB, OKLab / OKLCH, WCAG
+>     luminance / contrast, perceptual `lighten` / `darken`, palette
+>     accessors, `Color` class
+>     (`front-colors/scripts/_colors.py`)
+>   - The unified palette CSV — one row per color, semantic projections
+>     (Base / Emotion / Concepts / Psychology±) as columns
+>     (`front-colors/references/palette.csv`)
+>
+> No more changes will land here. The package is *not* on PyPI; the
+> historical install instructions below are kept only for users with
+> existing scripts that pinned the old commit hash.
 
-[🕸️ AI Helpers](https://harchaoui.org/warith/ai-helpers)
+## What this repository was
 
-The colors have been chosen with 2 sources:
+`Colors Helper` was a small Python library shipping a curated palette
+(Apple system colors + light counterparts derived via
+[Tint & Shade Generator](https://maketintsandshades.com)) and a handful
+of utility functions for hex / RGB conversion and palette CSV
+management.
 
-  + macos colors available at [Apple Developer Color Guidelines](https://developer.apple.com/design/human-interface-guidelines/color#macOS-system-colors)
+Why it's archived: the math here was naïve (a `+70` channel offset
+isn't a perceptual lighten), the CSV column name drifted out of sync
+with the live file (`"Hex Code"` in code vs `Hexcode` in the published
+CSV), there were no contrast / OKLCH / CVD primitives, and the
+`os-helper` git dependency made the package hard to reuse. All those
+gaps are addressed properly inside `front-colors`.
 
-  + and light colors according to [Tint & Shade Generator](https://maketintsandshades.com)
+The Apple-curated palette itself remains valuable and lives on at
+<https://harchaoui.org/warith/colors/> and inside
+[`front-colors/references/palette.csv`](https://github.com/warith-harchaoui/front/blob/main/front-colors/references/palette.csv).
 
-
-
-
-[![logo](assets/repository-open-graph-template.png)](https://harchaoui.org/warith/ai-helpers)
-
-Colors Helper is a Python library that uses Apple carefuly chosen colors and provides utility functions for color manipulation, conversion, and palette management. It includes features like converting colors between formats, generating light counterparts, and managing a centralized color palette.
-
-# Installation
-
-## Install Package
-
-We recommend using Python environments. If you need help setting one up, check out:
-
-[🥸 Tech tips](https://harchaoui.org/warith/4ml/#install)
-
-To install Colors Helper, simply run:
+## Historical install (do not use for new work)
 
 ```bash
-pip install --force-reinstall --no-cache-dir git+https://github.com/warith-harchaoui/colors-helper.git@main
+pip install --force-reinstall --no-cache-dir \
+    git+https://github.com/warith-harchaoui/colors-helper.git@main
 ```
 
-# Usage
+## Author
 
-You can find many examples here:
-
-[📋 Examples](EXAMPLES.md)
-
-
-# Some elements of color psychology (to be improved)
-
-Colors can evoke emotions and associations. Here’s a brief overview of common associations, though they can vary across cultures:
-
- + Red: Excitement, passion, and urgency.
- + Blue: Trust, calmness, and reliability.
- + Green: Growth, nature, and stability.
- + Purple: Luxury, creativity, and mystery.
- + Black: Power, elegance, and sophistication.
- + White: Cleanliness, simplicity, and peace.
-
- # Authors
-  - [Warith Harchaoui](https://deraison.ai)
-  - [Laurent Pantanacce](https://www.linkedin.com/in/pantanacce/)
+[Warith Harchaoui](https://deraison.ai)

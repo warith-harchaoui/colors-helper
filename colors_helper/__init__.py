@@ -1,7 +1,7 @@
 """
 Colors Helper
 
-This module provides utilities for color manipulation, including conversions between RGB and wavelength,
+This module provides utilities for color manipulation, including hex/RGB conversions,
 generating light counterparts of colors, and managing a centralized color palette CSV file ('good_colors.csv').
 
 If 'good_colors.csv' is missing, it will automatically be downloaded from a specified URL.
@@ -13,7 +13,7 @@ Functions:
     - add_color_with_light_counterpart: Adds a color and its light counterpart to the CSV.
     - name2rgb: Retrieves the RGB values for a color by its name.
     - name2hexcode: Retrieves the hexadecimal code for a color by its name.
-    - colors: Lists all true colors in the CSV in increasing order of wavelength.
+    - colors: Lists all true colors in the CSV (excluding light counterparts).
 
 Authors:
 - Warith Harchaoui, https://harchaoui.org/warith

@@ -9,10 +9,12 @@ __pycache__/
 # logs
 logs/
 
-# json and yaml
-*.json
-*.yaml
-*.csv
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
 
 # Distribution / packaging
 .Python
