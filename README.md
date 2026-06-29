@@ -53,4 +53,4 @@ pip install --force-reinstall --no-cache-dir \
 
 ## Author
 
-[Warith Harchaoui](https://deraison.ai)
+[Warith HARCHAOUI](https://linkedin.com/in/warith-harchaoui)
